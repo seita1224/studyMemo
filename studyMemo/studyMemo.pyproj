@@ -15,8 +15,8 @@
     <WebBrowserUrl>http://localhost</WebBrowserUrl>
     <OutputPath>.</OutputPath>
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
-    <Name>sutudyMemo</Name>
-    <RootNamespace>sutudyMemo</RootNamespace>
+    <Name>studyMemo</Name>
+    <RootNamespace>studyMemo</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -29,47 +29,51 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="runserver.py" />
-    <Compile Include="sutudyMemo\models\class1.py" />
-    <Compile Include="sutudyMemo\__init__.py" />
-    <Compile Include="sutudyMemo\views.py" />
+    <Compile Include="studyMemo\controlers\ApiConnection.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="studyMemo\models\ArticleBlog.py" />
+    <Compile Include="studyMemo\__init__.py" />
+    <Compile Include="studyMemo\views.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="sutudyMemo\" />
-    <Folder Include="sutudyMemo\models\" />
-    <Folder Include="sutudyMemo\static\" />
-    <Folder Include="sutudyMemo\static\content\" />
-    <Folder Include="sutudyMemo\static\fonts\" />
-    <Folder Include="sutudyMemo\static\scripts\" />
-    <Folder Include="sutudyMemo\templates\" />
+    <Folder Include="studyMemo\" />
+    <Folder Include="studyMemo\models\" />
+    <Folder Include="D:\ProjectWork\Git\studyMemo\studyMemo\studyMemo\controlers\" />
+    <Folder Include="studyMemo\static\" />
+    <Folder Include="studyMemo\static\content\" />
+    <Folder Include="studyMemo\static\fonts\" />
+    <Folder Include="studyMemo\static\scripts\" />
+    <Folder Include="studyMemo\templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
-    <Content Include="sutudyMemo\static\content\bootstrap.css" />
-    <Content Include="sutudyMemo\static\content\bootstrap.min.css" />
-    <Content Include="sutudyMemo\static\content\site.css" />
-    <Content Include="sutudyMemo\static\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="sutudyMemo\static\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="sutudyMemo\static\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="sutudyMemo\static\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="sutudyMemo\static\scripts\bootstrap.js" />
-    <Content Include="sutudyMemo\static\scripts\bootstrap.min.js" />
-    <Content Include="sutudyMemo\static\scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="sutudyMemo\static\scripts\jquery-1.10.2.js" />
-    <Content Include="sutudyMemo\static\scripts\jquery-1.10.2.min.js" />
-    <Content Include="sutudyMemo\static\scripts\jquery-1.10.2.min.map" />
-    <Content Include="sutudyMemo\static\scripts\jquery.validate-vsdoc.js" />
-    <Content Include="sutudyMemo\static\scripts\jquery.validate.js" />
-    <Content Include="sutudyMemo\static\scripts\jquery.validate.min.js" />
-    <Content Include="sutudyMemo\static\scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="sutudyMemo\static\scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="sutudyMemo\static\scripts\modernizr-2.6.2.js" />
-    <Content Include="sutudyMemo\static\scripts\respond.js" />
-    <Content Include="sutudyMemo\static\scripts\respond.min.js" />
-    <Content Include="sutudyMemo\static\scripts\_references.js" />
-    <Content Include="sutudyMemo\templates\about.html" />
-    <Content Include="sutudyMemo\templates\contact.html" />
-    <Content Include="sutudyMemo\templates\index.html" />
-    <Content Include="sutudyMemo\templates\layout.html" />
+    <Content Include="studyMemo\static\content\bootstrap.css" />
+    <Content Include="studyMemo\static\content\bootstrap.min.css" />
+    <Content Include="studyMemo\static\content\site.css" />
+    <Content Include="studyMemo\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="studyMemo\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="studyMemo\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="studyMemo\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="studyMemo\static\scripts\bootstrap.js" />
+    <Content Include="studyMemo\static\scripts\bootstrap.min.js" />
+    <Content Include="studyMemo\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="studyMemo\static\scripts\jquery-1.10.2.js" />
+    <Content Include="studyMemo\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="studyMemo\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="studyMemo\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="studyMemo\static\scripts\jquery.validate.js" />
+    <Content Include="studyMemo\static\scripts\jquery.validate.min.js" />
+    <Content Include="studyMemo\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="studyMemo\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="studyMemo\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="studyMemo\static\scripts\respond.js" />
+    <Content Include="studyMemo\static\scripts\respond.min.js" />
+    <Content Include="studyMemo\static\scripts\_references.js" />
+    <Content Include="studyMemo\templates\about.html" />
+    <Content Include="studyMemo\templates\contact.html" />
+    <Content Include="studyMemo\templates\index.html" />
+    <Content Include="studyMemo\templates\layout.html" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
