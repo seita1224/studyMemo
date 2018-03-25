@@ -29,7 +29,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="runserver.py" />
-    <Compile Include="studyMemo\controlers\ApiConnection.py">
+    <Compile Include="studyMemo\ApiConnection.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="studyMemo\models\ArticleBlog.py" />
@@ -38,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="studyMemo\" />
+    <Folder Include="studyMemo\controlers\" />
     <Folder Include="studyMemo\models\" />
     <Folder Include="D:\ProjectWork\Git\studyMemo\studyMemo\studyMemo\controlers\" />
     <Folder Include="studyMemo\static\" />
