@@ -18,6 +18,7 @@
     <Name>studyMemo</Name>
     <RootNamespace>studyMemo</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,23 +30,34 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="runserver.py" />
-    <Compile Include="studyMemo\ApiConnection.py">
+    <Compile Include="studyMemo\views\api.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="studyMemo\models\ArticleBlog.py" />
-    <Compile Include="studyMemo\__init__.py" />
-    <Compile Include="studyMemo\views.py" />
+    <Compile Include="studyMemo\models\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="studyMemo\views\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="studyMemo\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="studyMemo\views\views.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="studyMemo\" />
     <Folder Include="studyMemo\controlers\" />
-    <Folder Include="studyMemo\models\" />
     <Folder Include="D:\ProjectWork\Git\studyMemo\studyMemo\studyMemo\controlers\" />
+    <Folder Include="D:\ProjectWork\Git\studyMemo\studyMemo\studyMemo\models\" />
+    <Folder Include="studyMemo\models\" />
     <Folder Include="studyMemo\static\" />
     <Folder Include="studyMemo\static\content\" />
     <Folder Include="studyMemo\static\fonts\" />
     <Folder Include="studyMemo\static\scripts\" />
     <Folder Include="studyMemo\templates\" />
+    <Folder Include="D:\ProjectWork\Git\studyMemo\studyMemo\studyMemo\views\" />
+    <Folder Include="studyMemo\views\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
@@ -86,6 +98,9 @@
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X64</Architecture>
     </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
